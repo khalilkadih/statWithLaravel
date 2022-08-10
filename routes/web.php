@@ -30,5 +30,14 @@ Route::get('user',function()
 //route post use it when we send data from a forum to an other page
 Route::post('user',function(Request $request ){
 return  $request;
+});
 
+//route with parametere 
+Route::get('user/{id}',function( int $id){
+    if($id==1){
+        return view('admin');
+    }
+    else return view('dashbord');
+
+//return $id;
 });
