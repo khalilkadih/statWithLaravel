@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+ use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,9 @@ Route::get('user',function()
     //return 'user';
 }
 );
+
+//route post use it when we send data from a forum to an other page
+Route::post('user',function(Request $request ){
+return  $request;
+
+});
