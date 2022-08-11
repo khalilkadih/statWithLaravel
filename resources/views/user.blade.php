@@ -1,7 +1,3 @@
-<?php
+@extends('layouts.nav')
 
 
-echo '<h1>hello from user </h1>';
-
-
-?>
